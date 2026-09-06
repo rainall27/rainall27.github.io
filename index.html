@@ -2,16 +2,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Clip Autoposter</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 20px;color:#111}
+h1{margin-bottom:4px}
+.sub{color:#666;margin-top:0}
+.btn{display:inline-block;background:#fe2c55;color:#fff;text-decoration:none;padding:14px 24px;border-radius:8px;font-weight:600;margin:24px 0}
+.btn:hover{background:#e0203f}
+footer{margin-top:48px;border-top:1px solid #eee;padding-top:16px;font-size:14px;color:#666}
+footer a{color:#666}
+</style>
 <h1>Clip Autoposter</h1>
-<p>Clip Autoposter is a personal scheduling tool. It uploads short videos from my own library and publishes them to my own TikTok account at planned times, using the TikTok Content Posting API.</p>
+<p class="sub">Personal scheduling tool for my own short videos.</p>
+
+<p>Clip Autoposter uploads short videos from my own library and publishes them to my own TikTok account at planned times, using the TikTok Content Posting API.</p>
+
+<a class="btn" href="https://www.tiktok.com/v2/auth/authorize/?client_key=sbawo3t2zzc8q12foh&scope=user.info.basic%2Cvideo.publish&response_type=code&redirect_uri=https%3A%2F%2Frainall.ru%2Ftiktok-callback%2F&state=x1">Connect TikTok account</a>
+
 <h2>How it works</h2>
 <ol>
 <li>I connect my TikTok account with Login Kit and grant the video.publish permission.</li>
 <li>I add a video file and a caption to the publishing queue.</li>
 <li>At the scheduled time the tool uploads the file and posts it to my TikTok profile.</li>
 </ol>
-<h2>Documents</h2>
-<ul>
-<li><a href="/terms/">Terms of Service</a></li>
-<li><a href="/privacy/">Privacy Policy</a></li>
-</ul>
+
+<footer>
+<a href="/terms/">Terms of Service</a> &nbsp;·&nbsp; <a href="/privacy/">Privacy Policy</a>
+</footer>
